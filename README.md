@@ -24,13 +24,17 @@ Installing software on shared servers isn't a possibility. This little script ai
 - ```www=0``` (default: 1): Skip including www.domain.com
 
 
+### Credits 
+
+All the Let's Encypt magic is done by  [kelunik's PHP ACME client](https://github.com/kelunik/acme-client/blob/
+master/doc/advanced-usage.md). All I've done is build a wrapper around it to install the certificates via WHM's API. 
+
 ### Links
-[The PHP ACME client by kelunik](https://github.com/kelunik/acme-client/blob/
+
+- [The PHP ACME client by kelunik](https://github.com/kelunik/acme-client/blob/
 master/doc/advanced-usage.md)
-
-[Digiz cPanel script](https://digitz.org/blog/lets-encrypt-cpanel-script/)
-
-[cPanel API](https://documentation.cpanel.net/display/SDK/Guide+to+WHM+API+1)
+- [Digiz cPanel script](https://digitz.org/blog/lets-encrypt-cpanel-script/)
+- [cPanel API](https://documentation.cpanel.net/display/SDK/Guide+to+WHM+API+1)
 
 
 	
