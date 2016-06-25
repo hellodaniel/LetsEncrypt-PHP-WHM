@@ -18,6 +18,37 @@ Installing software on shared servers isn't a possibility. This little script ai
 - Access via web browser
 
 
+### Config file
+
+	; The domain name(s)
+	; Multiple domains can be colon separated, www. will automatically be pre-pended
+	domain = 
+
+	; Use Let's Encrypt staging to avoid quote limits
+	staging = 0
+
+	; The cPanel username
+	; This is required to perform the SSL installation via WHM
+	cpanel_user = 
+
+	; This e-mail will receive expiration notices from Let's Encrypt
+	email = email@domain.com
+
+	; Where to output the challenge files 
+	; (must be the root of the domain)
+	public_html = "../"
+
+	; Where to store the output files and certificates
+	storage = "../../.LetsEncrypt"
+
+	; WHM username (used to access the API)
+	whm_user = ""
+
+	; WHM key (get this from your WHM console)
+	whm_key = ""
+
+
+
 ### Optional query string parameters
 
 - ```force_install=1```: Make the WHM re-install, even if the certificate seems valid
